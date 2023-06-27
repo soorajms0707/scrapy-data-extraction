@@ -57,7 +57,7 @@ class MyTheresaSpider(scrapy.Spider):
 
             self.counter += 1
             if self.counter >= 1000:
-                self.log("Reached the response limit of 1000. Stopping the spide")
+                self.log("Reached the response limit of 1000. Stopping the spider")
 
     def save_to_json(self, data):
         filename = "output.json"
